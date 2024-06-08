@@ -1,0 +1,31 @@
+version: "3.10"
+services:
+  app:
+    build: .
+    volumes:
+      - .:/food_bakery
+    ports:
+      - 8000:8000
+    image: app:food_bakery
+    container_name: food_bakery_container
+    command: python manage.py runserver 0.0.0.0:8000
+    depends_on:
+      - db
+  db:
+    image: postgres
+    volumes:
+      - ./data/db:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_DB=food_bakery
+      - POSTGRES_USER=postgres
+      - POSTGRES_PASSWORD=postgres
+    container_name: postgres_db
+  pgadmin:
+    image: dpage/pgadmin4
+    environment:
+      PGADMIN_DEFAULT_EMAIL: food_bakery@admin.com
+      PGADMIN_DEFAULT_PASSWORD: postgres
+    ports:
+      - "5050:80"
+    depends_on:
+      - db
