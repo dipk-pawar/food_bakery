@@ -30,12 +30,10 @@ services:
     image: dpage/pgadmin4
     environment:
       PGADMIN_DEFAULT_EMAIL: food_bakery@admin.com
-      PGADMIN_DEFAULT_PASSWORD:
-        
+      PGADMIN_DEFAULT_PASSWORD: postgres
     ports:
       - "5050:80"
     depends_on:
       - db
     volumes:
-      - ./data/pgadmin:/var/lib/data/pgadmin
-
+      - ./data/pgadmin:/var/lib/pgadmin

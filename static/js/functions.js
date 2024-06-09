@@ -38,7 +38,7 @@ jQuery(document).ready(function () {
     /*Location Menu Function End*/
 
     /*Fitvideo Script*/
-    
+
     var swiper = new Swiper('.testimonial.fancy .swiper-container', {
         pagination: '.swiper-pagination',
         paginationClickable: true,
@@ -226,7 +226,7 @@ jQuery(document).ready(function () {
     });
 
     /*
-     * sticky header code end 
+     * sticky header code end
      */
 
     if (jQuery(".default-pagination").lenght != "") {
@@ -497,7 +497,7 @@ jQuery(document).ready(function () {
 
 
 /* ---------------------------------------------------------------------------
- * Post like Counter 
+ * Post like Counter
  * --------------------------------------------------------------------------- */
 function foodbakery_post_likes_count(admin_url, id, obj) {
     "use strict";

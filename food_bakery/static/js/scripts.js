@@ -495,15 +495,15 @@
 /**
  * Swiper 3.3.1
  * Most modern mobile touch slider and framework with hardware accelerated transitions
- * 
+ *
  * http://www.idangero.us/swiper/
- * 
+ *
  * Copyright 2016, Vladimir Kharlampidi
  * The iDangero.us
  * http://www.idangero.us/
- * 
+ *
  * Licensed under MIT
- * 
+ *
  * Released on: February 7, 2016
  */
 ! function() {
@@ -11403,7 +11403,7 @@ jQuery(document).ready(function () {
         });
     }
     /*
-     * end custom scroll oder detail popup. 
+     * end custom scroll oder detail popup.
      */
 
     /*Main Navigation Function Start*/
@@ -11435,7 +11435,7 @@ jQuery(document).ready(function () {
         this.defualtPos = elePos;
         this.stopper = stopTarget;
 
-        // Methods  
+        // Methods
         this.defaultValues = function () {
             this.element.css({
                 "position": "relative",
@@ -11729,4 +11729,3 @@ jQuery(document).ready(function () {
 /*----------Window Load Function Start----------*/
 
 /*HTML Functions End*/
-

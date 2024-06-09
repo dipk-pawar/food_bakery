@@ -333,20 +333,20 @@
                 }
             });
         }
-        
+
         function getWidthForObject(object) {
             var width;
-            
+
             try {
                 width = object[0].getBoundingClientRect().width;
             }
             catch(err) {
             }
-            
+
             if (typeof width === "undefined") {
                 width = object.width();
             }
-            
+
             return width;
         }
     }
